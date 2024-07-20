@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Loan Approval</title>
+    <style>
+        body  {
+  background-image: url("https://cdn.corporatefinanceinstitute.com/assets/Loans-1-1024x666.jpeg");
+  background-repeat: no-repeat;
+  background-size: 1540px 900px;
+}
+        input{
+            padding: 5px 100px 0px 0px;
+            margin: 10px;
+        }
+        button{
+            
+            background-color: rgb(1, 1, 19);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<form action={{url_for('submit')}} method="post">
+    <h2>Enter your Details for Loan Approval Prediction</h2>
+
+        
+    
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="gender" name="gender"><br>
+        
+        <label for="married">Married:</label><br>
+        <input type="text" id="married" name="married"><br>
+        
+        <label for="dependents">Dependents:</label><br>
+        <input type="text" id="dependents" name="dependents"><br>
+        
+        <label for="education">Education:</label><br>
+        <input type="text" id="education" name="education"><br>
+        
+        <label for="self_employed">Self Employed:</label><br>
+        <input type="text" id="self_employed" name="self_employed"><br>
+        
+        <label for="applicant_income">Applicant Income:</label><br>
+        <input type="text" id="applicant_income" name="applicant_income"><br>
+        
+        <label for="coapplicant_income">Co Applicant Income:</label><br>
+        <input type="text" id="coapplicant_income" name="coapplicant_income"><br>
+        
+        <label for="loan_amount">Loan Amount:</label><br>
+        <input type="text" id="loan_amount" name="loan_amount"><br>
+        
+        <label for="loan_amount_term">Loan Amount Term:</label><br>
+        <input type="text" id="loan_amount_term" name="loan_amount_term"><br>
+        
+        <label for="credit_history">Credit History:</label><br>
+        <input type="text" id="credit_history" name="credit_history"><br>
+        
+        <label for="property_area">Property Area:</label><br>
+        <input type="text" id="property_area" name="property_area"><br>
+
+        
+
+        
+        
+        <button onclick="myFunction()" style="height:30px; width:70px">submit</button>
+</form>
+</body>
+</html>
